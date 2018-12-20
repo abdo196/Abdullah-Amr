@@ -1,0 +1,374 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.navbar
+{
+    padding: 0;
+    z-index: 1;
+}
+.bg-dark
+{
+    background-color: #000 !important;
+}
+.nav-link
+{
+    color: #FFF !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.active a
+{
+    color: #EC3237 !important;
+    position: relative;
+}
+.active a::after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid #ec3237;
+    top: 130%;
+    left: 0;
+}
+.nav-link:hover
+{
+    color: #EC3237 !important;
+}
+.nav-link:active
+{
+    border-bottom: 2px solid #ec3237;
+}
+.brand_logo
+{
+    padding: 0px 10px;
+    width: 90px;
+    max-width: 90px;
+    height: 70px;
+    float: left;
+}
+.brand_title
+{
+    display: block;
+    padding: 20px 10px;
+    float: left;
+    height: auto;
+    font-weight: 600;
+    color: #ffffff;
+}
+.home
+{
+	padding: 170px 0px;
+    height: 650px;
+    background: transparent;
+    background: url('../images/cover.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.overlay{
+	position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(236, 51, 55, 0.7);
+    color: #FFF;
+}
+.caption h1
+{
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-shadow: 0px 5px 10px #af2424;
+}
+.caption p
+{
+    font-size: 3rem;
+}
+.btn
+{
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 2px solid #fff;
+}
+.btn:hover
+{
+    color:#ec3237; 
+}
+.overlay a
+{
+    position: absolute;
+    bottom: 10px;
+    animation: animate 1s infinite;
+    animation-direction: alternate;
+    color: #fff;
+}
+@keyframes animate {
+    0% {
+        transform:  translateY(-20px);
+    }
+    100% {
+        transform:  translateY(20px);
+    }
+}
+.about
+{
+    padding: 50px 0;
+    color: #444444;
+}
+.about h1
+{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.profile h2
+{
+    font-weight: 700;
+}
+.profile p
+{
+    color: #969696;
+}
+.profile .social
+{
+    position: relative;
+	overflow: hidden;
+	margin: 10px 0px;
+	padding-top: 25px;
+	border-top: 1px solid #fafafa;
+}
+.social  ul
+{
+    list-style: none;
+}
+.social ul li
+{
+    display: inline-block;
+}
+.social ul li a
+{
+    margin: 5px;
+    border: 1px solid #444;
+    padding: 8px 10px;
+    color: #818181;
+}
+.social ul li a:hover
+{
+    background-color: #ec3237;
+	color: #ffffff;
+	border: 1px solid #ec3237;
+}
+.social ul li a i
+{
+    font-size: 1.4em;
+}
+.skill
+{
+	margin: 30px 0 50px;
+    line-height: 30px;
+}
+.skill h2
+{
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px #ec3237;
+}
+.skill p
+{
+    color: #818181;
+}
+.progress{
+	margin-bottom: 20px;
+}
+.progress-bar{
+    height: 12px;
+    line-height: 12px;
+	background-color: #ec3237;
+}
+.skill .btn
+{
+    background-color:#EC3237 !important ;
+    margin-top: 30px;
+    color: #fff !important;
+}
+.skill .btn:hover
+{
+    background-color:#ec3237  !important;
+    color: #fff !important;
+    border: 1px dotted red !important;
+}
+.work
+{
+    padding:50px 0;
+    background-color: #F5F5F5;
+}
+.work .info h1
+{
+    text-transform: uppercase;    
+    color: #444444;
+}
+.work .info p
+{
+    color: #444;
+}
+.work .box
+{
+    padding: 20px 10px 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    box-shadow: 0px 1px 4px rgba(107, 69, 69, 0.050);
+}
+.work .box h4
+{
+    text-transform: uppercase;
+    font-weight: 600
+}
+.work .box .icon
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 45px;
+    background-color: #eeeeee;
+    color: #777777;
+    margin-bottom: 10px;
+}
+.work .box .icon i
+{
+    text-align: center;
+    font-size: 24px;
+}
+.work .box:hover .icon
+{
+    background-color: #ec3237;
+    color: #ffffff;
+}
+.work .box:hover h4
+{
+    color: #ec3237;
+}
+.work .btn
+{
+    text-transform: uppercase;
+    background-color: #ec3237 !important;
+}
+.work .btn:hover
+{
+    color: #fff
+}
+.counter
+{
+    padding: 100px 0;
+    background-image: url(../images/project-counter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.counter .icon , .counter h4
+{
+    color: #ec3237;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.counter span
+{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+.counter .bx
+{
+    padding: 15px 0px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.portfolio
+{
+    background-color: #F5F5F5
+}
+.portfolio h2
+{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 600;
+    color: #888;
+}
+.portfolio p
+{
+    color: #555;
+}
+.portfolio .link .btn
+{
+    background-color: #fff;
+    color: #444;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border: 2px solid #dddddd;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.portfolio .link .btn:hover
+{
+    border: 2px solid #ec3237;
+    color: #ec3237 ;
+}
+.portfolio .link .btn1
+{
+    background-color: #ec3237;
+    color: #ffffff !important;
+    border: 2px solid #ec3237;
+}
+.portfolio .box
+{
+    position: relative;
+    margin-bottom: 50px;
+}
+.portfolio .title
+{
+    padding: 20px 0 10px;
+    text-align: center;
+    background-color: #fff;
+}
+.portfolio .title a
+{
+    position: absolute;
+    left: 45%;
+    top: 62%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: black;
+    border-radius: 50%;
+    color: #fff;
+}
+.portfolio .title i
+{
+    width: 25px;
+    text-align: center;
+}
+.portfolio .box:hover a
+{
+    background-color: #ec3237;
+    color: #fff;
+}
+.portfolio .button .btn
+{
+    background-color: #ec3237;
+    color: #ffffff !important;
+    border: 2px solid #ec3237;
+}
+.nav-item
+{
+    background-color: #000;
+}
